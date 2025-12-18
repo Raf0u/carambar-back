@@ -38,7 +38,3 @@ const Joke = sequelize.define('Joke', {
 });
 
 module.exports = Joke;
-
-
-
-    },
