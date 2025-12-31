@@ -24,4 +24,18 @@ Sans cela, le navigateur bloquerait les requêtes venant du Front-end (GitHub Pa
 
 ### 5. Seeding (Remplissage automatique)
 Sur des hébergeurs gratuits comme Render, le système de fichiers est éphémère (reset à chaque redémarrage).
-* **Solution :** Au démarrage (`app.js`), on vérifie si la table est vide. Si oui, on injecte les 10 blagues initiales automatiquement. Cela garantit que l'API est toujours utilisable.
+* **Solution :** Au démarrage (`app.js`), on vérifie si la table est vide. Si oui, on injecte les 10 blagues initiales automatiquement. 
+* Cela garantit que l'API est toujours utilisable.
+
+## 6. Documentation avec Swagger
+Swagger permet de générer automatiquement une documentation interactive pour l'API.
+* Les annotations JSDoc dans `jokeRoutes.js` décrivent chaque endpoint (paramètres, réponses).
+* La page Swagger UI (`/api-docs`) permet de tester les endpoints directement depuis le navigateur.
+
+components/schemas/Joke :
+Au début du fichier, on définit une seule fois à quoi ressemble une "Blague". 
+Ensuite, on utilise $ref: '#/components/schemas/Joke' partout ailleurs. 
+C'est comme une variable : si la structure de la blague change, on la modifie à un seul endroit.
+
+Les Tags :
+tags: [Blagues] permet de regrouper toutes ces routes dans une belle section nommée "Blagues" sur l'interface graphique.
