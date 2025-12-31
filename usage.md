@@ -17,6 +17,8 @@ Teste ces liens dans ton navigateur maintenant :
 Pour voir toutes les blagues (le JSON) : http://localhost:3000/api/v1/blagues Tu devrais voir le texte brut de tes 10 blagues.
 Pour voir une blague aléatoire : http://localhost:3000/api/v1/blagues/random Tu devrais voir une seule blague qui change si tu rafraîchis la page (F5).
 Pour voir la coquille de la documentation : http://localhost:3000/api-docs Tu vas voir une belle interface bleue et verte, mais elle sera vide ("No operations defined").
+Pourquoi la doc est vide ?
+C'est la dernière étape du Back-end. Swagger est installé, mais nous ne lui avons pas encore "décrit" nos routes. Il faut ajouter des commentaires spéciaux (JSDoc) dans ton fichier de routes pour que Swagger sache quoi afficher.
 
 Ces liens seront ensuite complétés au fur et à mesure que tu implémenteras les fonctionnalités.
 

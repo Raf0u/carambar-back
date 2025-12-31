@@ -2,13 +2,13 @@
 
 NEXT STEP:
 
-- [ ] Créer les routes API
-  - [ ] Créer le fichier src/routes/jokeRoutes.js
-  - [ ] Définir les méthodes HTTP : Associer les verbes (GET, POST) et les URLs aux fonctions du contrôleur (ex: router.get('/random', jokeCtrl.findRandomJoke))
-- [ ] Le Cerveau (Point d'entrée app.js)
-  - [ ] Initialiser Express : Créer l'application
-  - [ ] Configurer les Middlewares: body-parser (pour lire le JSON entrant) // cors (pour autoriser le futur Front-end GitHub Pages à discuter avec le Back)
-  - [ ] Synchroniser la BDD : Dire à Sequelize de créer la table Jokes si elle n'existe pas au démarrage
+- [X] Créer les routes API
+  - [X] Créer le fichier src/routes/jokeRoutes.js
+  - [X] Définir les méthodes HTTP : Associer les verbes (GET, POST) et les URLs aux fonctions du contrôleur (ex: router.get('/random', jokeCtrl.findRandomJoke))
+- [X] Le Cerveau (Point d'entrée app.js)
+  - [X] Initialiser Express : Créer l'application
+  - [X] Configurer les Middlewares: body-parser (pour lire le JSON entrant) // cors (pour autoriser le futur Front-end GitHub Pages à discuter avec le Back)
+  - [X] Synchroniser la BDD : Dire à Sequelize de créer la table Jokes si elle n'existe pas au démarrage
 - [ ] La Documentation (Swagger)
   - [ ] Configurer Swagger : Dans app.js (ou un fichier dédié), définir les options de base (Titre de l'API, version)
   - [ ] Annoter les Routes : Ajouter des commentaires spéciaux (JSDoc) au-dessus des routes pour qu'elles apparaissent dans la page de documentation automatique
